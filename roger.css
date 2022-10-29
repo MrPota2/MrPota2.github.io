@@ -11,10 +11,12 @@ padding:0;
 }
 .inner {
 	background-color: #95CCED;
+	min-height: 100%;
 	min-height: calc(100vh - 20px);
+	padding-bottom: 0.1px;
 }
 .bottom {
-	clear: right;
+	clear: both;
 }
 
 .RFID_stack {
@@ -34,6 +36,72 @@ padding:0;
 	aspect-ratio: 1/1;
 }
 
+#totop {
+	text-align: center;
+}
+
+#totop a {
+	color: black; 
+	background-color: #d3e7f4; 
+	padding: 5px 15px; 
+	filter: drop-shadow(2px 2px 1px); 
+	text-decoration: none;
+}
+
+#totop a:hover {
+	filter: drop-shadow(1px 1px 2px); 
+}
+
+#feed {
+	overflow: auto;
+	position: relative;
+	width: 85vw;
+	margin: 0 auto 15px auto;
+	background-color: #b2d8f0;
+}
+
+.feed_item {
+	overflow: auto;
+	width: 95%;
+	height: auto;
+	clear: right;
+	margin: 15px auto;
+	background-color: #d3e7f4;
+	filter: drop-shadow(1px 1px 2px);
+}
+
+.feed_item h3 {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.feed_item p {
+	margin-top: 10px;
+	font-size: small;
+}
+
+.feed_item img {
+	float: right;
+	margin: 10px;
+	max-width: 40%;
+}
+
+.framedimage {
+	float: right; 
+	padding: 0.3em; 
+	background-color: #065070; 
+	margin: 0.3em; 
+	margin-right: 15px;
+}
+
+#dato {
+	text-align: right;
+	clear: right;
+}
+
+#dato em {
+	font-size: xx-small;
+}
 
 h2 {
 	font-size: 5vw;
@@ -47,20 +115,35 @@ p {
 	text-align: center;
 	width: 70vw;
 	margin: 0 auto;
+	padding: 15px;
+	background-color: #d3e7f4;
 }
 
 #snus_container img {
-	width: 95%;
+	width: 90%;
 	margin-top: 5px;
 	padding-top: 5px;
 	border-top: 5px #065070 solid;
 }
 
+#snus_row_container {
+	width: 70vw;
+	padding: 15px;
+	margin: 0 auto;
+	margin-top: 15px;
+	background-color: #d3e7f4;
+}
+
+#snus_row_container h3 {
+	margin-top: 2px;
+}
+
 #snus_row {
-	width: 80vw;
+	width: 70vw;
 	display: flex;
+	height: fit-content;
 	justify-content: space-between;
-	margin: 30px auto;
+	margin: 5px auto 3px auto;
 }
 
 #snus_row img {
@@ -112,10 +195,10 @@ footer {
 
 @media (min-width: 1079px) {
 	h1 {
-	text-align: center;
-	padding: 2%;
-	background-color: #3DC7F5;
-	font-size: 4vw;
+		text-align: center;
+		padding: 2%;
+		background-color: #3DC7F5;
+		font-size: 4vw;
 	}
 	#navigationBar ul > li {
 		width: 8vw;
@@ -127,12 +210,21 @@ footer {
 		font-size: 4em;
 	}
 	.RFID_stack {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 28em;
-	width: fit-content;
-	margin: 0 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 28em;
+		width: fit-content;
+		margin: 0 50px;
+	}
+
+	.framedimage {
+		float: right; 
+		padding: 0.5em; 
+		width: 11vw;
+		background-color: #065070; 
+		margin: 0.3em; 
+		margin-right: 2em;
 	}
 
 	.RFID_stack img {
@@ -140,6 +232,59 @@ footer {
 		background-color: #065070;
 		width: 8em;
 	}
+
+	#feed {
+		overflow: auto;
+		position: relative;
+		width: 40vw;
+		margin: 0 auto 15px auto;
+		background-color: #b2d8f0;
+	}
+
+	.feed_item {
+		overflow: auto;
+		width: 95%;
+		height: auto;
+		clear: right;
+		margin: 15px auto;
+		background-color: #d3e7f4;
+		filter: drop-shadow(1px 1px 2px);
+	}
+
+	.feed_item h3 {
+		text-align: center;
+		margin-top: 10px;
+		font-size: x-large;
+	}
+
+	.feed_item p {
+		margin-top: 10px;
+		font-size: large;
+	}
+	#snus_container {
+		text-align: center;
+		width: 50vw;
+		margin: 0 auto;
+		padding: 15px;
+		background-color: #d3e7f4;
+	}
+
+	#snus_row {
+		width: 50vw;
+	}
+
+	#snus_row img {
+		width: 30%;
+	}
+
+	#snus_row_container {
+		position: relative;
+		width: 50vw;
+		margin: 15px auto;
+		margin-top: 15px;
+		background-color: #d3e7f4;
+	}
+
 }
 
 @media (min-width: 700px) {
