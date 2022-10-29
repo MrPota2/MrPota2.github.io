@@ -6,63 +6,62 @@
         content="width=device-width, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="roger.css">
     <style>
+        #RFID_stack {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            float: right;
+            margin: 0 calc(0.8vw + 1.6vh); 
+            margin-bottom: calc(0.8vw + 1.6vh);
+            height: 60vh;
+        }
 
+        #RFID_stack img {
+            background-color: #065070;
+            padding: calc(0.3vw + 0.6vh);
+            width: calc(3.5vw + 10vh);
+        }
     </style>
 </head>
 
 <body>
-    <div class="outer">
-        <div class="inner">
-            <h1>Roger Hovda</h1>
-            <nav id="navigationBar">
-                <ul>
-                    <li><a href="index.html"><img src="tab_icons/Home.png"
-                                alt="Home"></a></li>
-                    <li><a href="feed.html"><img src="tab_icons/Feed.png"
-                                alt="Feed"></a></li>
-                    <li><a href="RFID.html"><img src="tab_icons/RFID.png"
-                                alt="RFID" style="filter: drop-shadow(7px 7px 1px rgb(0, 39, 84));"></a></li>
-                    <li><a href="Snus.html"><img src="tab_icons/Snus.png"
-                                alt="Snus"></a></li>
-                    <li style="border-right: 0px;"><a
-                            href="Ommeg.html"><img src="tab_icons/Om meg.png"
-                                alt="Om meg"></a></li>
-                </ul>
-            </nav>
-            <h2
-                style="text-align: center; margin-top: 20px; margin-bottom: 20px; ">
-                RFID</h2>
-            <div class="RFID_stack">
-                <img src="bilder/x-series_hand.png" alt="Hovda" width="100">
-                <img src="bilder/NExT.jpg" alt="Hovda" width="100">
-                <img src="bilder/Syringe.jpg" alt="Hovda" width="100">
-            </div>
-            <p>textblokk adsnfl akndflasjdnf øasdjfnaøs fjknalf
-                jansdføajkndsfl ajkdsnf lasjkdf alsjkf asldfj naldf
-                jknlf ajnd lakjdnfl akjdnf alkjdsnf alskdjb alskj
-                fbnasdlk fjasbndlfjasbdn lkjasbfltextblokk adsnfl
-                akndflasjdnf øasdjfnaøs fjknalf jansdføajkndsfl
-                ajkdsnf lasjkdf alsjkf asldfj naldf jknlf ajnd
-                lakjdnfl akjdnf
-                alkjdsnf alskdjb alskj fbnasdlk fjasbndlfjasbdn
-                lkjasbftextblokk adsnfl akndflasjdnf øasdjfnaøs
-                fjknalf jansdføajkndsfl
-                ajkdsnf lasjkdf alsjkf asldfj naldf jknlf ajnd
-                lakjdnfl akjdnf
-                alkjdsnf alskdjb alskj fbnasdlk fjasbndlfjasbdn
-                lkjasbftextblokk adsnfl akndflasjdnf øasdjfnaøs
-                fjknalf jansdføajkndsfl
-                ajkdsnf lasjkdf alsjkf asldfj naldf jknlf ajnd
-                lakjdnfl akjdnf
-                alkjdsnf alskdjb alskj fbnasdlk fjasbndlfjasbdn
-                lkjasbftextblokk adsnfl akndflasjdnf øasdjfnaøs
-                fjknalf jansdføajkndsfl
-                ajkdsnf lasjkdf alsjkf asldfj naldf jknlf ajnd
-                lakjdnfl akjdnf
-                alkjdsnf alskdjb alskj fbnasdlk fjasbndlfjasbdn
-                lkjasbf</p>
-            <div class="bottom"></div>
+    <div id="inner">
+        <h1>Roger Hovda</h1>
+        <nav id="navigationBar">
+            <ul>
+                <li><a href="index.html"><img src="tab_icons/Home.png"
+                            alt="Home"></a></li>
+                <li><a href="feed.html"><img src="tab_icons/Feed.png"
+                            alt="Feed"></a></li>
+                <li><a href="RFID.html"><img src="tab_icons/RFID.png"
+                            alt="RFID" style="filter: drop-shadow(7px 7px 1px rgb(0, 39, 84));"></a></li>
+                <li><a href="snus.html"><img src="tab_icons/Snus.png"
+                            alt="Snus"></a></li>
+                <li style="border-right: 0px;"><a
+                        href="ommeg.html"><img src="tab_icons/Om meg.png"
+                            alt="Om meg"></a></li>
+            </ul>
+        </nav>
+        <h2>RFID</h2>
+        <div id="RFID_stack">
+            <img src="bilder/x-series_hand.png" alt="Hovda" width="100">
+            <img src="bilder/NExT.jpg" alt="Hovda" width="100">
+            <img src="bilder/Syringe.jpg" alt="Hovda" width="100">
         </div>
+        <p>textblokk adsnfl akndflasjdnf øasdjfnaøs fjknalf
+            jansdføajkndsfl ajkdsnf lasjkdf alsjkf asldfj naldf
+            jknlf ajnd lakjdnfl akjdnf alkjdsnf alskdjb alskj
+            fbnasdlk fjasbndlfjasbdn lkjasbfltextblokk adsnfl
+            akndflasjdnf øasdjfnaøs fjknalf jansdføajkndsfl
+            ajkdsnf lasjkdf alsjkf asldfj naldf jknlf ajnd
+            lakjdnfl akjdnf
+            alkjdsnf alskdjb alskj fbnasdlk fjasbndlfjasbdn
+            ajkdsnf lasjkdf alsjkf asldv
+            bfj naldf jknlf ajnd
+            lakjdnfl akjdnf
+            alkjdsnf alskdjb alskj fbnasdlk fjasbndlfjasbdn
+            lkjasbf</p>
+        <div id="bottom"></div>
     </div>
     <footer></footer>
 </body>

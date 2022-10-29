@@ -6,53 +6,84 @@
             content="width=device-width, user-scalable=no">
         <link rel="stylesheet" type="text/css" href="roger.css">
         <style>
+            #snus_container {
+                text-align: center;
+                width: calc(15vw + 30vh);
+                margin: 0 auto;
+                padding: 15px;
+                background-color: #b2d8f0;
+                box-shadow: inset 0px 0px 4px rgb(0, 39, 84, 0.7)
+            }
+
+            #snus_container img {
+                width: 90%;
+                margin-top: 5px;
+                padding-top: 5px;
+                border-top: 5px #065070 solid;
+            }
+
+            #snus_row {
+                display: flex;
+                justify-content: space-between;
+                margin: 0.5em;
+            }
+
+            #snus_row img {
+                width: 30%;
+            }
+
+            #snus_row_container {
+                position: relative;
+                width: calc(15vw + 30vh);
+                padding: 15px;
+                margin: 15px auto;
+                margin-top: 15px;
+                background-color: #b2d8f0;
+                box-shadow: inset 0px 0px 4px rgb(0, 39, 84, 0.7)
+            }       
 
         </style>
     </head>
     
     <body>
-        <div class="outer">
-            <div class="inner">
-                <h1>Roger Hovda</h1>
-                <nav id="navigationBar">
-                    <ul>
-                        <li><a href="index.html"><img src="tab_icons/Home.png"
-                                    alt="Home"></a></li>
-                        <li><a href="feed.html"><img src="tab_icons/Feed.png"
-                                    alt="Feed"></a></li>
-                        <li><a href="RFID.html"><img src="tab_icons/RFID.png"
-                                    alt="RFID"></a></li>
-                        <li><a href="Snus.html"><img src="tab_icons/Snus.png"
-                                    alt="Snus" style="filter: drop-shadow(7px 7px 1px rgb(0, 39, 84));"></a></li>
-                        <li style="border-right: 0px;"><a
-                                href="Ommeg.html"><img src="tab_icons/Om meg.png"
-                                    alt="Om meg"></a></li>
-                    </ul>
-                </nav>
-                <h2
-                    style="text-align: center; margin-top: 20px; margin-bottom: 20px; ">
-                    Snus</h2>
-                <p style="text-align: center;">
-                    <q>...og hvem kan sette mitt hjerte i brann? Bare deg min kjære.</q>
-                </p>
-                <div id="snus_container">
-                    <h3 >Snus Aksjepris</h3>
-                    <img src="bilder/snus_aksje.png" alt="snus_aksje">
-                </div>
-                <div id="snus_row_container">
-                    <h3 style="text-align: center;">MMmmmmmm nammenam</h3>
-                    <div id="snus_row">
-                        <img src="bilder/epok_no_7.jpeg" alt="epok7">
-                        <img src="bilder/epok_no_7.jpeg" alt="epok7">
-                        <img src="bilder/epok_no_7.jpeg" alt="epok7">
-                    </div>
-                    <p style="margin-top: 7px; margin: 0px;">
-                        Her er de forskjellige favorittsnusene mine. Det går da i Epok
-                        freeze fordi det er den beste snusen.
-                    </p>
-                </div>
-                <div class="bottom"></div>
+        <div id="inner">
+            <h1>Roger Hovda</h1>
+            <nav id="navigationBar">
+                <ul>
+                    <li><a href="index.html"><img src="tab_icons/Home.png"
+                                alt="Home"></a></li>
+                    <li><a href="feed.html"><img src="tab_icons/Feed.png"
+                                alt="Feed"></a></li>
+                    <li><a href="RFID.html"><img src="tab_icons/RFID.png"
+                                alt="RFID"></a></li>
+                    <li><a href="snus.html"><img src="tab_icons/Snus.png"
+                                alt="Snus" style="filter: drop-shadow(7px 7px 1px rgb(0, 39, 84));"></a></li>
+                    <li style="border-right: 0px;"><a
+                            href="ommeg.html"><img src="tab_icons/Om meg.png"
+                                alt="Om meg"></a></li>
+                </ul>
+            </nav>
+            <h2>Snus</h2>
+            <p style="text-align: center; margin-top: 0;">
+                <q>...og hvem kan sette mitt hjerte i brann? Bare deg min kjære.</q>
+            </p>
+            <div id="snus_container">
+                <h3 >Snus Aksjepris</h3>
+                <img src="bilder/snus_aksje.png" alt="snus_aksje">
             </div>
+            <div id="snus_row_container">
+                <h3 style="text-align: center;">MMmmmmmm nammenam</h3>
+                <div id="snus_row">
+                    <img src="bilder/epok_no_7.jpeg" alt="epok7">
+                    <img src="bilder/epok_no_7.jpeg" alt="epok7">
+                    <img src="bilder/epok_no_7.jpeg" alt="epok7">
+                </div>
+                <p style="margin-top: 7px; margin: 0px;">
+                    Her er de forskjellige favorittsnusene mine. Det går da i Epok
+                    freeze fordi det er den beste snusen.
+                </p>
+            </div>
+            <div id="bottom"></div>
         </div>
         <footer></footer>
     </body>

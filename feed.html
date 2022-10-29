@@ -6,61 +6,117 @@
             content="width=device-width, user-scalable=no">
         <link rel="stylesheet" type="text/css" href="roger.css">
         <style>
+            /* || totop */
+            #totop {
+                text-align: center;
+                margin: calc(1vw + 2vh);
+            }
+
+            #totop a {
+                text-decoration: none;
+                color: rgb(12, 60, 76);
+                background-color: #d3e7f4;
+                padding: calc(0.5vw + 1vh);
+                filter: drop-shadow(2px 2px 1px);
+            }
+
+            #totop a:hover {
+                filter: drop-shadow(1px 1px 2px);
+            }
+
+            /* || feed */
+
+            #feed {
+                overflow: auto;
+                position: relative;
+                width: calc(15vw + 30vh);
+                margin: 0 auto;
+                margin-bottom: 15px;
+                background-color: #b2d8f0;
+                box-shadow: inset 0px 0px 4px rgb(0, 39, 84, 0.7)
+            }
+
+            .feed_item {
+                overflow: auto;
+                width: 90%;
+                margin: 18px auto;
+                background-color: #d3e7f4;
+                filter: drop-shadow(2px 2px 3px);
+            }
+
+            .feed_item h3 {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .feed_item p {
+                margin-top: 10px;
+                font-size: calc(0.6vw + 1.2vh);
+            }
+
+            .feed_item img {
+                float: right;
+                margin: 10px;
+                max-width: 40%;
+            }
+
+            .dato {
+                text-align: right;
+                clear: right;
+                bottom: 0;
+            }
+
+            .dato em {
+                font-size: calc(0.5vw + 1vh);
+                color: gray;
+            }
 
         </style>
     </head>
 
     <body>
-        <div id="top"></div>
-        <div class="outer">
-            <div class="inner">
-                <h1>Roger Hovda</h1>
-                <nav id="navigationBar">
-                    <ul>
-                        <li><a href="index.html"><img src="tab_icons/Home.png"
-                                    alt="Home"></a></li>
-                        <li><a href="feed.html"><img src="tab_icons/Feed.png"
-                                    alt="Feed" style="filter: drop-shadow(7px 7px 1px rgb(0, 39, 84));"></a></li>
-                        <li><a href="RFID.html"><img src="tab_icons/RFID.png"
-                                    alt="RFID"></a></li>
-                        <li><a href="Snus.html"><img src="tab_icons/Snus.png"
-                                    alt="Snus"></a></li>
-                        <li style="border-right: 0px;"><a
-                                href="Ommeg.html"><img src="tab_icons/Om meg.png"
-                                    alt="Om meg"></a></li>
-                    </ul>
-                </nav>
-                <h2
-                    style="text-align: center; margin-top: 20px; margin-bottom: 20px; ">
-                    Feed</h2>
-                    <div id="feed">
-                        <div class="feed_item">
-                            <h3>Halloween</h3>
-                            <img src="feed_content/carved_pumpkin.png" alt="carved_pumpkin">
-                            <p>Ait bois, da er det halloween og det er bare å slenge på kostyme, jeg kjører cyborg naturlighvis. Bilde kommer</p>
-                            <p id="dato"><em>Dato: 31.10.22</em></p>
-                            <div class="bottom"></div>
-                        </div>
-                        <div class="feed_item">
-                            <h3>Halloween</h3>
-                            <img src="feed_content/carved_pumpkin.png" alt="carved_pumpkin">
-                            <p>Ait bois, da er det halloween og det er bare å slenge på
-                                kostyme, jeg kjører cyborg naturlighvis. Bilde kommer</p>
-                                <p id="dato"><em>Dato: 31.10.22</em></p>
-                            <div class="bottom"></div>
-                        </div>
-                        <div class="feed_item">
-                            <h3>Halloween</h3>
-                            <img src="feed_content/carved_pumpkin.png" alt="carved_pumpkin">
-                            <p>Ait bois, da er det halloween og det er bare å slenge på
-                                kostyme, jeg kjører cyborg naturlighvis. Bilde kommer</p>
-                            <p id="dato"><em>Dato: 31.10.22</em></p>
-                            <div class="bottom"></div>
-                        </div>
-                        <p id="totop"><a href="#top">Til Toppen</a></p>
+        <div id="inner">
+            <h1>Roger Hovda</h1>
+            <nav id="navigationBar">
+                <ul>
+                    <li><a href="index.html"><img src="tab_icons/Home.png"
+                                alt="Home"></a></li>
+                    <li><a href="feed.html"><img src="tab_icons/Feed.png"
+                                alt="Feed" style="filter: drop-shadow(7px 7px 1px rgb(0, 39, 84));"></a></li>
+                    <li><a href="RFID.html"><img src="tab_icons/RFID.png"
+                                alt="RFID"></a></li>
+                    <li><a href="snus.html"><img src="tab_icons/Snus.png"
+                                alt="Snus"></a></li>
+                    <li style="border-right: 0px;"><a
+                            href="ommeg.html"><img src="tab_icons/Om meg.png"
+                                alt="Om meg"></a></li>
+                </ul>
+            </nav>
+            <h2 id="top">Feed</h2>
+                <div id="feed">
+                    <div class="feed_item">
+                        <h3>Halloween</h3>
+                        <img src="feed_content/carved_pumpkin.png" alt="carved_pumpkin">
+                        <p>Ait bois, da er det halloween og det er bare å slenge på kostyme, jeg kjører cyborg naturlighvis. Bilde kommer</p>
+                        <p class="dato"><em>Dato: 31.10.22</em></p>
                     </div>
-                <div class="bottom"></div>
-            </div>
+                    <div class="feed_item">
+                        <h3>Halloween</h3>
+                        <img src="feed_content/carved_pumpkin.png" alt="carved_pumpkin">
+                        <p>Ait bois, da er det halloween og det er bare å slenge på
+                            kostyme, jeg kjører cyborg naturlighvis. Bilde kommer</p>
+                            <p class="dato"><em>Dato: 31.10.22</em></p>
+                    </div>
+                    <div class="feed_item">
+                        <h3>Halloween</h3>
+                        <img src="feed_content/carved_pumpkin.png" alt="carved_pumpkin">
+                        <p>Ait bois, da er det halloween og det er bare å slenge på
+                            kostyme, jeg kjører cyborg naturlighvis. Bilde kommer</p>
+                        <p class="dato"><em>Dato: 31.10.22</em></p>
+                    </div>
+                    <p id="totop"><a href="#top">Til Toppen</a></p>
+                </div>
+            <div id="bottom"></div>
         </div>
     <footer></footer>
     </body>
